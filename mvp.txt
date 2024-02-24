@@ -1,0 +1,38 @@
+Escopo do MVP:
+Autenticação:
+
+Recrutadores podem se cadastrar e fazer login na plataforma.
+Candidatos podem se cadastrar e fazer login.
+Postagem de Vagas:
+
+Recrutadores podem criar, editar e excluir vagas de emprego.
+Cada vaga deve ter informações básicas, como título do cargo, descrição, requisitos e benefícios.
+Candidatura Online:
+
+Candidatos podem visualizar as vagas disponíveis.
+Candidatos podem se candidatar a uma vaga, fornecendo seu currículo e informações básicas.
+Gerenciamento de Candidaturas:
+
+Recrutadores podem ver uma lista de candidaturas recebidas para cada vaga.
+Recrutadores podem marcar o status de cada candidatura (por exemplo, em análise, agendado para entrevista, rejeitado).
+Comunicação Básica:
+
+Recrutadores podem enviar mensagens aos candidatos diretamente pela plataforma.
+Candidatos recebem notificações por e-mail sobre atualizações no status de sua candidatura.
+Painel do Recrutador:
+
+Recrutadores têm um painel que destaca o status geral das vagas e candidaturas.
+Gráficos simples mostrando o número de vagas postadas, candidaturas recebidas, etc.
+Interface Responsiva:
+
+A interface da plataforma deve ser acessível e funcional em dispositivos móveis.
+Notificações por E-mail:
+
+- [OFF] -
+
+Implementar notificações automáticas por e-mail para candidatos sobre atualizações no processo seletivo.
+Feedback dos Usuários:
+
+- [OK] - 
+
+Inclua uma área para feedback dos recrutadores e candidatos sobre a experiência na plataforma.
