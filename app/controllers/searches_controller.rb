@@ -2,9 +2,11 @@
 
 class SearchesController < ApplicationController
   def index
-    query = params[:query]
-    current_user.search_histories.create(query: query) if current_user
-    @companies = search_companies(query)
+    current_user.search_histories.create(query: params[:q][:term]) if current_user
+    @search_histories = current_user.search_histories.order(created_at: :desc)
+    render 'jobs/index'
+
+    # @companies = search_companies(query)
   end
 
   private

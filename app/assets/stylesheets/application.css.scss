@@ -18,3 +18,27 @@
 body {
   font-size: 16px;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+#header {
+  .navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .navbar-brand {
+      position: relative;
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    .sm-avatar {
+      margin-top: -8px;
+      border-radius: 35px;
+      background-color: #EEE;
+      border: 1px solid #000;
+    }
+  }
+}

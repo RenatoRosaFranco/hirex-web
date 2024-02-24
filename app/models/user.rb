@@ -25,6 +25,7 @@ class User < ApplicationRecord
   has_one :profile, dependent: :destroy
   has_many :feedbacks, dependent: :destroy
   has_many :applications, dependent: :destroy
+  has_many :search_histories, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

@@ -1,0 +1,83 @@
+.jobs, .searches {
+  position: relative;
+
+  #hero {
+    margin-top: -20px;
+    background-color: #EEE;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .title {
+      font-size: 45px;
+      margin-bottom: 20px;
+      padding-right: 10px;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .image {
+      background-color: #CCC;
+      height: 320px;
+
+      i {
+        color: #000;
+        margin-top: 60px;
+        border-radius: 26px;
+        font-size: 84px;
+      }
+    }
+
+    form {
+      input[type=text] {
+        position: relative;
+        height: 44px;
+      }
+    }
+
+    .badge {
+      position: relative;
+      margin-right: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000;
+    }
+  }
+
+  #search-history {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .sm-logo {
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid #000;
+      background-color: #EEE;
+      margin-right: 5px;
+    }
+  }
+
+  #highlight-companies {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .logo {
+      border: 1px solid #000;
+      background-color: #EEE;
+      border-radius: 80px;
+    }
+  }
+
+  #footer {
+    position: relative;
+    background-color: #EEE;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}

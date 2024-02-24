@@ -1,0 +1,46 @@
+<header id='header'>
+    <nav class="navbar navbar-default">
+    <div class="container container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<%= root_path %>">Hirex</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user then %>
+          <li class="dropdown">
+            <%= link_to '#', class: 'dropdown-toggle', 'data-toggle' => 'dropdown', role: 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' do %>
+              <%= image_tag('', class: 'sm-avatar', width: 35, height: 35) %>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to 'Editar perfil', '#' %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to 'Minha Conta', '#' %></li>
+              <li><%= link_to 'Meu Currículo', '#' %></li>
+              <li><%= link_to 'Minhas Candidaturas', '#' %></li>
+              <li><%= link_to 'Empresas que me candidatei', '#' %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to 'Termos de uso', '#' %></li>
+              <li><%= link_to 'Política de privacidade', '#' %></li>
+              <li role="separator" class="divider"></li>
+              <li><%= link_to 'Sair', '#' %></li>
+            </ul>
+          </li>
+          <% else %>
+          <li><%= link_to 'Login', new_user_session_path %></li>
+          <li><%= link_to 'Criar Conta', new_user_registration_path %></li>
+          <% end %>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
